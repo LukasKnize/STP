@@ -235,69 +235,81 @@ footer .footerCopyright p a:hover {
 }
 @media (max-width: 1050px) {
   main .quickMenu .quickMenuContainer {
-    display: flex;
-    padding: 100px 0;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: space-between;
   }
   main .quickMenu .quickMenuContainer .menuItem {
     width: 200px;
     height: 200px;
-    border: 1px #24783c solid;
-    border-radius: 20px;
-    box-shadow: #e8fff0 5px 9px 5px;
-  }
-  main .quickMenu .quickMenuContainer .menuItem .iconContainer {
-    width: 100%;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  }
-  main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
-    height: 50px;
-  }
-  main .quickMenu .quickMenuContainer .menuItem p {
-    color: #24783c;
-    text-align: center;
-    margin-top: 50px;
   }
 }
 @media (max-width: 850px) {
   main .quickMenu .quickMenuContainer {
     display: grid;
-    padding: 100px 0;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
     grid-template-rows: 50% 50%;
     grid-template-columns: 50% 50%;
     justify-items: center;
     row-gap: 25px;
   }
-  main .quickMenu .quickMenuContainer .menuItem {
-    width: 200px;
-    height: 200px;
-    border: 1px #24783c solid;
-    border-radius: 20px;
-    box-shadow: #e8fff0 5px 9px 5px;
-  }
-  main .quickMenu .quickMenuContainer .menuItem .iconContainer {
+}
+@media (max-width: 760px) {
+  main #importantInfo {
+    background-color: #e8fff0;
     width: 100%;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    padding-bottom: 40px;
   }
-  main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
+  main #importantInfo h2 {
+    color: #4d4d4d;
+    margin-left: 50px;
+    padding-top: 10px;
+  }
+  main #importantInfo .importantInfoHolder {
+    display: block;
+    width: 100%;
+  }
+  main #importantInfo .importantInfoHolder .importantInfoContainer {
+    padding: 0 50px;
+  }
+  main #importantInfo .importantInfoHolder .importantInfoContainer .InfoContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+  main #importantInfo .importantInfoHolder .importantInfoContainer img {
+    margin-right: 50px;
     height: 50px;
   }
-  main .quickMenu .quickMenuContainer .menuItem p {
-    color: #24783c;
-    text-align: center;
-    margin-top: 50px;
+  main #importantInfo .importantInfoHolder #LineBorder {
+    border-right: 1px #4d4d4d solid;
+  }
+}
+@media (max-width: 600px) {
+  main .quickMenu .quickMenuContainer {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    justify-items: center;
+    row-gap: 25px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media (max-width: 400px) {
+  main #importantInfo .importantInfoHolder .importantInfoContainer {
+    padding: 0 50px;
+  }
+  main #importantInfo .importantInfoHolder .importantInfoContainer .InfoContainer {
+    display: block;
+  }
+  main #importantInfo .importantInfoHolder .importantInfoContainer img {
+    margin-right: 50px;
+    height: 50px;
+  }
+  main #importantInfo .importantInfoHolder #LineBorder {
+    border-right: none;
   }
 }
 @media (max-width: 800px) {
@@ -355,14 +367,14 @@ footer .footerCopyright p a:hover {
   footer .footerContent .Footerprojects .projectCarousel {
     margin-top: 25px;
     width: 100%;
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   footer .footerContent .Footerprojects .projectCarousel img {
     height: auto;
-    max-height: 150px;
+    max-height: 120px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
