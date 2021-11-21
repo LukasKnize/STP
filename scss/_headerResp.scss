@@ -1,0 +1,38 @@
+@media (max-width: 800px) {
+    header {
+        .headerBody {
+            nav {
+                padding-left: 5px;
+                padding-right: 10px;
+                .headerLinks {
+                    .headerlink {
+                        display: none;
+                    }
+                    .mobileMenuButton {
+                        display: block;
+                        font-size: 2em;
+                        color: $whiteColor;
+                    }
+                }
+            }
+            h1 {
+                margin-left: 0;
+                text-align: center;
+            }
+            p {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .headerBody {
+            h1 {
+                margin-top: 150px;
+            }
+        }
+    }
+}

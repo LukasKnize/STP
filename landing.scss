@@ -1,0 +1,28 @@
+@import "scss/_colors.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+@import "scss/_scrollbar.scss";
+
+@import "scss/_header.scss";
+
+@import "scss/_main.scss";
+
+@import "scss/_footer.scss";
+
+@import"scss/_contentResp.scss";
+
+@import "scss/_headerResp.scss";
+
+@import "scss/_footerResp.scss";
+
+

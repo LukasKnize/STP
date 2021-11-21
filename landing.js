@@ -1,0 +1,30 @@
+let currentImg = 0;
+let logos = ['images/WR_Vertical_1-2048x515.png', 'images/Presloviny.cz_-1024x222.png', 'images/logo-301-simple.png'];
+
+setInterval(() => {
+    switch (currentImg) {
+        case 0:
+            document.getElementById("projectImg").src = logos[1];
+            document.getElementById("projectImg").style.background = "transparent";
+            break;
+        case 1:
+            document.getElementById("projectImg").src = logos[0];
+            document.getElementById("projectImg").style.background = "transparent";
+            break;
+        case 2:
+            document.getElementById("projectImg").src = logos[2];
+            document.getElementById("projectImg").style.background = "#24783c";
+            break;
+        default:
+            break;
+    }
+    if (currentImg == logos.length - 1) {
+        currentImg = 0;
+    } else {
+        currentImg += 1;
+    }
+}, 5000);
+
+window.addEventListener("load", function () {
+    document.getElementById("CopyrightText").innerHTML = new Date().getFullYear() + " © Smíchovská střední průmyslová škola a gymnázium";
+});

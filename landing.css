@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #24783c9d;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #24783c;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/alvaro-serrano-hjwKMkehBco-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .headerBody {
+  width: 100%;
+  height: 100%;
+  background-color: #24783c9d;
+}
+header .headerBody nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
+  align-items: center;
+}
+header .headerBody nav img {
+  height: 100px;
+}
+header .headerBody nav .headerLinks .headerlink {
+  color: #ffffff;
+  padding: 0 20px;
+  text-decoration: none;
+}
+header .headerBody nav .headerLinks .headerlink:hover {
+  text-decoration: underline;
+}
+header .headerBody nav .headerLinks .mobileMenuButton {
+  display: none;
+}
+header .headerBody h1 {
+  margin-top: 250px;
+  margin-left: 50px;
+  color: #ffffff;
+}
+header .headerBody p {
+  margin-top: 20px;
+  margin-left: 50px;
+  color: #ffffff;
+}
+header .headerBody .downArrow {
+  font-size: 80px;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  top: 80%;
+}
+
+main #importantInfo {
+  background-color: #e8fff0;
+  width: 100%;
+  padding-bottom: 40px;
+}
+main #importantInfo h2 {
+  color: #4d4d4d;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+main #importantInfo .importantInfoHolder {
+  display: flex;
+  width: 100%;
+}
+main #importantInfo .importantInfoHolder .importantInfoContainer {
+  padding: 0 50px;
+}
+main #importantInfo .importantInfoHolder .importantInfoContainer .InfoContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+main #importantInfo .importantInfoHolder .importantInfoContainer img {
+  margin-right: 50px;
+  height: 50px;
+}
+main #importantInfo .importantInfoHolder #LineBorder {
+  border-right: 1px #4d4d4d solid;
+}
+main .quickMenu {
+  width: 100%;
+}
+main .quickMenu .quickMenuContainer {
+  display: flex;
+  padding: 100px 0;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+main .quickMenu .quickMenuContainer .menuItem {
+  width: 230px;
+  height: 230px;
+  border: 1px #24783c solid;
+  border-radius: 20px;
+  box-shadow: #e8fff0 5px 9px 5px;
+}
+main .quickMenu .quickMenuContainer .menuItem .iconContainer {
+  width: 100%;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
+  height: 50px;
+}
+main .quickMenu .quickMenuContainer .menuItem p {
+  color: #24783c;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer {
+  width: 100%;
+  background-color: #e8fff0;
+}
+footer .footerContent {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footerContent .footerLinks {
+  width: 50%;
+}
+footer .footerContent .footerLinks h3 {
+  color: #24783c;
+  margin-top: 25px;
+}
+footer .footerContent .footerLinks a {
+  line-height: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+footer .footerContent .footerLinks a:hover {
+  text-decoration: underline;
+}
+footer .footerContent .Footerprojects {
+  width: 50%;
+}
+footer .footerContent .Footerprojects h3 {
+  margin-top: 25px;
+  color: #24783c;
+  margin-top: 25px;
+}
+footer .footerContent .Footerprojects .projectCarousel {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footerContent .Footerprojects .projectCarousel img {
+  height: 150px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footerContent .Footerprojects .projectCarousel .progressBar {
+  margin-top: 15px;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+footer .footerContent .Footerprojects .projectCarousel .progressBar .progressFiller {
+  width: 0%;
+  height: 100%;
+  animation: progresAnim 5s linear infinite;
+  background-color: #24783c;
+  border-radius: 10px;
+}
+footer .footerCopyright {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+footer .footerCopyright p a {
+  color: #000000;
+  text-decoration: none;
+}
+footer .footerCopyright p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes progresAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  main .quickMenu .quickMenuContainer {
+    display: flex;
+    padding: 100px 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+  main .quickMenu .quickMenuContainer .menuItem {
+    width: 200px;
+    height: 200px;
+    border: 1px #24783c solid;
+    border-radius: 20px;
+    box-shadow: #e8fff0 5px 9px 5px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem .iconContainer {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
+    height: 50px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem p {
+    color: #24783c;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 850px) {
+  main .quickMenu .quickMenuContainer {
+    display: grid;
+    padding: 100px 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    row-gap: 25px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem {
+    width: 200px;
+    height: 200px;
+    border: 1px #24783c solid;
+    border-radius: 20px;
+    box-shadow: #e8fff0 5px 9px 5px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem .iconContainer {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
+    height: 50px;
+  }
+  main .quickMenu .quickMenuContainer .menuItem p {
+    color: #24783c;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 800px) {
+  header .headerBody nav {
+    padding-left: 5px;
+    padding-right: 10px;
+  }
+  header .headerBody nav .headerLinks .headerlink {
+    display: none;
+  }
+  header .headerBody nav .headerLinks .mobileMenuButton {
+    display: block;
+    font-size: 2em;
+    color: #ffffff;
+  }
+  header .headerBody h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  header .headerBody p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  header .headerBody h1 {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1000px) {
+  footer {
+    width: 100%;
+    background-color: #e8fff0;
+  }
+  footer .footerContent {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+  footer .footerContent .footerLinks {
+    width: 100%;
+    text-align: center;
+  }
+  footer .footerContent .Footerprojects {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .footerCopyright {
+    width: 96%;
+  }
+}
+@media (max-width: 800px) {
+  footer .footerContent .Footerprojects .projectCarousel {
+    margin-top: 25px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footerContent .Footerprojects .projectCarousel img {
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .footerCopyright {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=landing.css.map */
