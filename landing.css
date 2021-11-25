@@ -56,11 +56,16 @@ header .headerBody nav img {
 }
 header .headerBody nav .headerLinks .headerlink {
   color: #ffffff;
-  padding: 0 20px;
+  margin: 0 20px;
   text-decoration: none;
+  background-image: linear-gradient(90deg, #ffffff, #ffffff);
+  background-size: 0% 3px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.5s ease;
 }
 header .headerBody nav .headerLinks .headerlink:hover {
-  text-decoration: underline;
+  background-size: 100% 3px;
 }
 header .headerBody nav .headerLinks .mobileMenuButton {
   display: none;
@@ -82,8 +87,21 @@ header .headerBody .downArrow {
   left: 50%;
   margin-left: -40px;
   top: 80%;
+  filter: drop-shadow(0px -8px 6px #e8fff0);
+  animation: arrowAnim 2s linear infinite;
 }
 
+@keyframes arrowAnim {
+  0% {
+    filter: drop-shadow(0px -8px 6px #e8fff0);
+  }
+  50% {
+    filter: drop-shadow(0px 8px 6px #e8fff0);
+  }
+  100% {
+    filter: drop-shadow(0px -8px 6px #e8fff0);
+  }
+}
 main #importantInfo {
   background-color: #e8fff0;
   width: 100%;
@@ -129,7 +147,11 @@ main .quickMenu .quickMenuContainer .menuItem {
   height: 230px;
   border: 1px #24783c solid;
   border-radius: 20px;
-  box-shadow: #e8fff0 5px 9px 5px;
+  box-shadow: #e8fff0 3px 3px 5px;
+  transition: box-shadow 1s;
+}
+main .quickMenu .quickMenuContainer .menuItem:hover {
+  box-shadow: #d2ffe2 6px 6px 5px;
 }
 main .quickMenu .quickMenuContainer .menuItem .iconContainer {
   width: 100%;

@@ -22,10 +22,15 @@ header {
             .headerLinks {
                 .headerlink {
                     color: $whiteColor;
-                    padding: 0 20px;
+                    margin: 0 20px;
                     text-decoration: none;
+                    background-image: linear-gradient(90deg, #ffffff, #ffffff);
+                    background-size: 0% 3px;
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                    transition: background-size 0.5s ease;
                     &:hover{
-                        text-decoration: underline;
+                        background-size: 100% 3px;
                     }
                 }
                 .mobileMenuButton{
@@ -50,6 +55,22 @@ header {
             left: 50%;
             margin-left: -40px;
             top: 80%;
+            filter: drop-shadow(0px -8px 6px $lightGreenColor);
+            animation: arrowAnim 2s linear infinite;
         }
+    }
+}
+
+@keyframes arrowAnim{
+    0%{
+        filter: drop-shadow(0px -8px 6px $lightGreenColor);
+    }
+
+    50%{
+        filter: drop-shadow(0px 8px 6px $lightGreenColor);
+    }
+
+    100%{
+        filter: drop-shadow(0px -8px 6px $lightGreenColor);
     }
 }
