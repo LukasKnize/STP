@@ -90,6 +90,9 @@ header .headerBody .downArrow {
   filter: drop-shadow(0px -8px 6px #e8fff0);
   animation: arrowAnim 2s linear infinite;
 }
+header .menuForMobileBackground {
+  display: none;
+}
 
 @keyframes arrowAnim {
   0% {
@@ -354,6 +357,39 @@ footer .footerCopyright p a:hover {
   header .headerBody p {
     margin-left: 0;
     text-align: center;
+  }
+  header .menuForMobileBackground {
+    width: 100%;
+    height: 100%;
+    background-color: #24783c9d;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  header .menuForMobileBackground .menuForMobile {
+    background-color: #e8fff0;
+    width: 300px;
+    height: 100%;
+    margin-left: auto;
+  }
+  header .menuForMobileBackground .menuForMobile .mobileMenuHeader {
+    font-size: 2em;
+    color: #24783c;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100px;
+    padding-right: 15px;
+  }
+  header .menuForMobileBackground .menuForMobile .mobileMenuLinks {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+  }
+  header .menuForMobileBackground .menuForMobile .mobileMenuLinks a {
+    line-height: 45px;
+    color: #24783c;
   }
 }
 @media (max-width: 400px) {

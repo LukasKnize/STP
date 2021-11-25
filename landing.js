@@ -28,3 +28,11 @@ setInterval(() => {
 window.addEventListener("load", function () {
     document.getElementById("CopyrightText").innerHTML = new Date().getFullYear() + " © Smíchovská střední průmyslová škola a gymnázium";
 });
+
+document.getElementById("openMenu").addEventListener("click", function (){
+    document.getElementById("menuForMobileBackground").style.display = "block";
+});
+
+document.getElementById("closeMenu").addEventListener("click", function (){
+    document.getElementById("menuForMobileBackground").style.display = "none";
+});

@@ -59,6 +59,10 @@ header {
             animation: arrowAnim 2s linear infinite;
         }
     }
+
+    .menuForMobileBackground{
+        display: none;
+    }
 }
 
 @keyframes arrowAnim{
