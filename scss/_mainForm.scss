@@ -1,0 +1,28 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  div {
+    display: flex;
+    flex-direction: column;
+    background-color: $whiteColor;
+    width: 80%;
+    height: 110%;
+    margin-bottom: 230px;
+    z-index: 1;
+    h1 {
+      background-color: $whiteColor;
+      width: 100%;
+      height: 8%;
+      p {
+        width: 18%;
+        font-weight: 500;
+        border-bottom: solid;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+    }
+  }
+}
