@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #24783c9d;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #24783c;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header .headerBody {
+  width: 100%;
+  height: 100%;
+  background-color: #24783c9d;
+}
+header .headerBody nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 100px;
+  align-items: center;
+}
+header .headerBody nav img {
+  height: 100px;
+}
+header .headerBody nav .headerLinks .headerlink {
+  color: #ffffff;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 80%;
+  height: 110%;
+  margin-bottom: 230px;
+  z-index: 1;
+}
+main div h1 {
+  background-color: #ffffff;
+  width: 100%;
+  height: 8%;
+}
+main div h1 p {
+  width: 18%;
+  font-weight: 500;
+  border-bottom: solid;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100%;
+  background-color: #e8fff0;
+}
+footer .footerContent {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footerContent .footerLinks {
+  width: 50%;
+}
+footer .footerContent .footerLinks h3 {
+  color: #24783c;
+  margin-top: 25px;
+}
+footer .footerContent .footerLinks a {
+  line-height: 35px;
+  color: #000000;
+  text-decoration: none;
+}
+footer .footerContent .footerLinks a:hover {
+  text-decoration: underline;
+}
+footer .footerContent .Footerprojects {
+  width: 50%;
+}
+footer .footerContent .Footerprojects h3 {
+  margin-top: 25px;
+  color: #24783c;
+  margin-top: 25px;
+}
+footer .footerContent .Footerprojects .projectCarousel {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footerContent .Footerprojects .projectCarousel img {
+  height: 150px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footerContent .Footerprojects .projectCarousel .progressBar {
+  margin-top: 15px;
+  width: 100%;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 10px;
+}
+footer .footerContent .Footerprojects .projectCarousel .progressBar .progressFiller {
+  width: 0%;
+  height: 100%;
+  animation: progresAnim 5s linear infinite;
+  background-color: #24783c;
+  border-radius: 10px;
+}
+footer .footerCopyright {
+  margin-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+footer .footerCopyright p a {
+  color: #000000;
+  text-decoration: none;
+}
+footer .footerCopyright p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes progresAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=form.css.map */
