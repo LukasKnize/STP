@@ -2,7 +2,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;;
   width: 100%;
   .mainContainer {
     display: flex;
@@ -37,6 +38,7 @@ main {
       height: 100%;
       margin-top: 50px;
       background-color: $lightGreenColor;
+      border-radius: 15px;
       h2 {
         width: 90%;
         padding: 10px 0;
@@ -48,10 +50,13 @@ main {
       .sideText {
         width: 90%;
         display: flex;
-        .category{
+        padding: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+        .category {
           width: 40%;
         }
-        .info{
+        .info {
           width: 60%;
         }
       }
