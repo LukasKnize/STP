@@ -1,0 +1,70 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    background-color: $whiteColor;
+    width: 90%;
+    height: auto;
+    min-height: 100%;
+    margin-top: -150px;
+    z-index: 1;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0)) 1 100%;
+    article {
+      width: 45%;
+      height: 100%;
+      h1 {
+        background-color: #ffffff;
+        width: 90%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgb(0 0 0 / 11%);
+      }
+      .articleText {
+        padding: 0 20px;
+        margin-top: 15px;
+      }
+    }
+    aside {
+      width: 45%;
+      height: 100%;
+      margin-top: 50px;
+      background-color: $lightGreenColor;
+      h2 {
+        width: 90%;
+        padding: 10px 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgb(0 0 0 / 11%);
+        text-align: center;
+      }
+      .sideText {
+        width: 90%;
+        display: flex;
+        .category{
+          width: 40%;
+        }
+        .info{
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    div {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}

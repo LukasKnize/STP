@@ -131,23 +131,56 @@ main {
 }
 main .mainContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-color: #ffffff;
   width: 90%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   margin-top: -150px;
   z-index: 1;
   border-width: 8px;
   border-style: solid;
   border-image: linear-gradient(to bottom, #e8fff0, rgba(0, 0, 0, 0)) 1 100%;
 }
-main .mainContainer h1 {
+main .mainContainer article {
+  width: 45%;
+  height: 100%;
+}
+main .mainContainer article h1 {
   background-color: #ffffff;
   width: 90%;
   padding: 10px 0;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+main .mainContainer article .articleText {
+  padding: 0 20px;
+  margin-top: 15px;
+}
+main .mainContainer aside {
+  width: 45%;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #e8fff0;
+}
+main .mainContainer aside h2 {
+  width: 90%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  text-align: center;
+}
+main .mainContainer aside .sideText {
+  width: 90%;
+  display: flex;
+}
+main .mainContainer aside .sideText .category {
+  width: 40%;
+}
+main .mainContainer aside .sideText .info {
+  width: 60%;
 }
 
 @media (max-width: 650px) {
@@ -287,4 +320,4 @@ footer .footerCopyright p a:hover {
   }
 }
 
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=akce.css.map */
