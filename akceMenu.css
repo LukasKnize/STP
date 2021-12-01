@@ -127,7 +127,6 @@ main {
   justify-content: center;
   align-items: center;
   height: auto;
-  min-height: 100vh;
   width: 100%;
 }
 main .mainContainer {
@@ -137,7 +136,7 @@ main .mainContainer {
   width: 90%;
   height: 100%;
   min-height: 100vh;
-  margin-top: -150px;
+  margin-top: -100px;
   z-index: 1;
   border-width: 8px;
   border-style: solid;
@@ -151,10 +150,70 @@ main .mainContainer h1 {
   margin-right: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
+main .mainContainer .MainContentItem {
+  display: flex;
+  width: 90%;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+main .mainContainer .MainContentItem .itemName {
+  width: 25%;
+}
+main .mainContainer .MainContentItem .itemDate {
+  width: 10%;
+}
+main .mainContainer .MainContentItem .itemDescription {
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main .mainContainer .menuHeadline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 25px 0;
+}
 
+@media (max-width: 900px) {
+  main .mainContainer .MainContentItem .itemName {
+    width: 35%;
+  }
+  main .mainContainer .MainContentItem .itemDate {
+    display: none;
+  }
+  main .mainContainer .MainContentItem .itemDescription {
+    width: 65%;
+  }
+}
 @media (max-width: 650px) {
   main div h1 {
     text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  main .mainContainer .MainContentItem .itemName {
+    width: 40%;
+  }
+  main .mainContainer .MainContentItem .itemDescription {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  main .mainContainer .MainContentItem .itemName {
+    width: 50%;
+  }
+  main .mainContainer .MainContentItem .itemDescription {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  main .mainContainer .MainContentItem .itemName {
+    width: 100%;
+    text-align: center;
+  }
+  main .mainContainer .MainContentItem .itemDescription {
+    display: none;
   }
 }
 footer {
@@ -289,4 +348,4 @@ footer .footerCopyright p a:hover {
   }
 }
 
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=akceMenu.css.map */

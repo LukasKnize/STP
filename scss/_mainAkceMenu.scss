@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: $whiteColor;
+        width: 90%;
+        height: 100%;
+        min-height: 100vh;
+        margin-top: -100px;
+        z-index: 1;
+        border-width: 8px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0)) 1 100%;
+        h1 {
+            background-color: #ffffff;
+            width: 90%;
+            padding: 10px 0;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid rgb(0 0 0 / 11%);
+        }
+        .MainContentItem {
+            display: flex;
+            width: 90%;
+            padding: 10px 0;
+            margin-left: auto;
+            margin-right: auto;
+            border-bottom: 1px solid rgb(0 0 0 / 11%);
+            .itemName{
+                width: 25%;
+            }
+            .itemDate{
+                width: 10%;
+            }
+            .itemDescription{
+                width: 65%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .menuHeadline{
+            border-bottom: 1px solid rgb(0 0 0 / 60%);
+            padding: 25px 0;
+        }
+    }
+}
+
+@media (max-width: 900px){
+    main {
+        .mainContainer {
+            .MainContentItem {
+                .itemName{
+                    width: 35%;
+                }
+                .itemDate{
+                    display: none;
+                }
+                .itemDescription{
+                    width: 65%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    main {
+        div {
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    main {
+        .mainContainer {
+            .MainContentItem {
+                .itemName{
+                    width: 40%;
+                }
+                .itemDescription{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    main {
+        .mainContainer {
+            .MainContentItem {
+                .itemName{
+                    width: 50%;
+                }
+                .itemDescription{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    main {
+        .mainContainer {
+            .MainContentItem {
+                .itemName{
+                    width: 100%;
+                    text-align: center;
+                }
+                .itemDescription{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
