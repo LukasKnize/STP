@@ -122,6 +122,11 @@ header .menuForMobileBackground {
     color: #24783c;
   }
 }
+@media (min-height: 1000px) {
+  header {
+    height: 15vh;
+  }
+}
 main {
   display: flex;
   justify-content: center;

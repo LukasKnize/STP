@@ -98,3 +98,9 @@ header {
     }
   }
 }
+
+@media(min-height: 1000px){
+  header {
+    height: 15vh;
+  }
+}

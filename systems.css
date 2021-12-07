@@ -142,7 +142,7 @@ main .mainContainer {
   width: 90%;
   height: 100%;
   min-height: 100vh;
-  margin-top: -150px;
+  margin-top: -100px;
   z-index: 1;
   border-width: 8px;
   border-style: solid;
@@ -156,10 +156,100 @@ main .mainContainer h1 {
   margin-right: auto;
   border-bottom: 1px solid rgba(0, 0, 0, 0.11);
 }
+main .mainContainer .content {
+  padding: 45px 0;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  row-gap: 25px;
+}
+main .mainContainer .content .systemItem {
+  width: 300px;
+  height: 300px;
+  border: 1px #24783c solid;
+  border-radius: 20px;
+  box-shadow: #e8fff0 3px 3px 5px;
+  transition: box-shadow 1s;
+}
+main .mainContainer .content .systemItem:hover {
+  box-shadow: #d2ffe2 6px 6px 5px;
+}
+main .mainContainer .content .systemItem .iconContainer {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .mainContainer .content .systemItem .iconContainer img {
+  height: 50px;
+}
+main .mainContainer .content .systemItem p {
+  color: #24783c;
+  text-align: center;
+  margin-top: 50px;
+}
 
+@media (max-width: 1100px) {
+  main .mainContainer {
+    margin-top: -80px;
+  }
+}
+@media (max-width: 785px) {
+  main .mainContainer .content .systemItem {
+    width: 250px;
+    height: 250px;
+  }
+  main .mainContainer .content .systemItem .iconContainer {
+    height: 125px;
+  }
+}
 @media (max-width: 650px) {
-  main div h1 {
+  main .mainContainer h1 {
     text-align: center;
+  }
+  main .mainContainer .content .systemItem {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media (max-width: 600px) {
+  main .mainContainer .content {
+    grid-template-columns: 100%;
+  }
+  main .mainContainer .content .systemItem {
+    width: 300px;
+    height: 300px;
+  }
+  main .mainContainer .content .systemItem .iconContainer {
+    height: 150px;
+  }
+}
+@media (max-width: 400px) {
+  main .mainContainer .content {
+    grid-template-columns: 100%;
+  }
+  main .mainContainer .content .systemItem {
+    width: 250px;
+    height: 250px;
+  }
+  main .mainContainer .content .systemItem .iconContainer {
+    height: 125px;
+  }
+}
+@media (max-width: 300px) {
+  main .mainContainer .content {
+    grid-template-columns: 100%;
+  }
+  main .mainContainer .content .systemItem {
+    width: 220px;
+    height: 220px;
+  }
+  main .mainContainer .content .systemItem .iconContainer {
+    height: 115px;
   }
 }
 footer {
@@ -294,4 +384,4 @@ footer .footerCopyright p a:hover {
   }
 }
 
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=systems.css.map */
