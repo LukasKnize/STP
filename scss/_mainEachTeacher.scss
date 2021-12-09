@@ -1,0 +1,181 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  min-height: 90vh;
+  width: 100%;
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $whiteColor;
+    width: 90%;
+    height: 100%;
+    min-height: 90vh;
+    margin-top: -80px;
+    z-index: 1;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0))
+      1 100%;
+    h1 {
+      background-color: #ffffff;
+      width: 90%;
+      padding: 10px 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid rgb(0 0 0 / 11%);
+    }
+    .info {
+      margin-left: 200px;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        .eachElement {
+          margin-bottom: 75px;
+          margin-top: 25px;
+          display: flex;
+          flex-direction: row;
+          i {
+            color: $greenColor;
+            font-size: 2.25rem;
+            margin-right: 10px;
+          }
+          img {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+
+            .header {
+              font-size: 0.75rem;
+            }
+            .text {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .aboutTeacher {
+    width: 90%;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .teacherPlan {
+    width: 500px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    .mainContainer {
+      .info {
+        margin-left: 120px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 80px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 60px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 150px;
+        flex-direction: column;
+      }
+      .teacherPlan {
+        width: 250px;
+        height: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 75px;
+        flex-direction: column;
+      }
+      .teacherPlan {
+        width: 250px;
+        height: 150px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  main {
+    .mainContainer {
+      h1 {
+        text-align: center;
+      }
+      .info {
+        margin-left: 5px;
+        flex-direction: column;
+      }
+      .teacherPlan {
+        width: 250px;
+        height: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,220 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: $whiteColor;
+    width: 90%;
+    height: 100%;
+    min-height: 100vh;
+    margin-top: -90px;
+    z-index: 1;
+    border-width: 8px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0))
+      1 100%;
+    h1 {
+      background-color: #ffffff;
+      width: 90%;
+      padding: 10px 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid rgb(0 0 0 / 11%);
+    }
+    .MainContentItem {
+      display: flex;
+      width: 90%;
+      padding: 10px 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-bottom: 1px solid rgb(0 0 0 / 11%);
+
+      .teacherName {
+        width: 20%;
+        color: #00497b;
+        span {
+          color: black;
+        }
+      }
+      .teacherShort {
+        width: 10%;
+      }
+      .teacherComission {
+        width: 20%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .teacherEmail {
+        width: 20%;
+        color: #00497b;
+        span {
+          color: black;
+        }
+      }
+      .teacherCabinet {
+        width: 20%;
+      }
+    }
+    .menuHeadline {
+      border-bottom: 1px solid rgb(0 0 0 / 60%);
+      padding: 25px 0;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  main {
+    .mainContainer {
+      .MainContentItem {
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 25%;
+        }
+        .teacherComission {
+          width: 30%;
+        }
+        .teacherCabinet {
+          width: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    .mainContainer {
+      .MainContentItem {
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 30%;
+        }
+        .teacherComission {
+          width: 40%;
+        }
+        .teacherCabinet {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  main {
+    div {
+      h1 {
+        text-align: center;
+      }
+    }
+    .mainContainer {
+      .MainContentItem {
+        font-size: 1rem;
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 30%;
+        }
+        .teacherComission {
+          width: 50%;
+        }
+        .teacherCabinet {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    .mainContainer {
+      .MainContentItem {
+        font-size: 1rem;
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 30%;
+        }
+        .teacherComission {
+          width: 50%;
+        }
+        .teacherCabinet {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    .mainContainer {
+      .MainContentItem {
+        font-size: 1rem;
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 30%;
+        }
+        .teacherComission {
+          width: 50%;
+        }
+        .teacherCabinet {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    .mainContainer {
+      .MainContentItem {
+        font-size: 1rem;
+        .teacherShort {
+          display: none;
+        }
+        .teacherEmail {
+          display: none;
+        }
+        .teacherName {
+          width: 30%;
+        }
+        .teacherComission {
+          width: 50%;
+        }
+        .teacherCabinet {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
