@@ -1,0 +1,90 @@
+footer {
+    width: 100%;
+    background-color: $lightGreenColor;
+    .footerContent {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        .footerLinks {
+            width: 50%;
+            h3 {
+                color: $greenColor;
+                margin-top: 25px;
+            }
+            a {
+                line-height: 35px;
+                color: $blackColor;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .Footerprojects {
+            width: 50%;
+            h3 {
+                margin-top: 25px;
+                color: $greenColor;
+                margin-top: 25px;
+            }
+            .projectCarousel {
+                margin-top: 25px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    height: 150px;
+                    max-width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    cursor: pointer;
+                }
+                .progressBar {
+                    margin-top: 15px;
+                    width: 100%;
+                    height: 5px;
+                    background-color: $blackColor;
+                    border-radius: 10px;
+                    .progressFiller {
+                        width: 0%;
+                        height: 100%;
+                        animation: progresAnim 5s linear infinite;
+                        background-color: $greenColor;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .footerCopyright{
+        margin-top: 25px;
+        padding-bottom: 25px;
+        display: flex;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        p{
+            a{
+                color: $blackColor;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@keyframes progresAnim {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
