@@ -166,7 +166,7 @@ main .mainContainer .MainContentItem {
 }
 main .mainContainer .MainContentItem .teacherName {
   width: 20%;
-  color: #00497b;
+  color: #24783c;
 }
 main .mainContainer .MainContentItem .teacherName span {
   color: black;
@@ -179,7 +179,7 @@ main .mainContainer .MainContentItem .teacherComission {
 }
 main .mainContainer .MainContentItem .teacherEmail {
   width: 20%;
-  color: #00497b;
+  color: #24783c;
 }
 main .mainContainer .MainContentItem .teacherEmail span {
   color: black;
