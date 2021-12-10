@@ -33,7 +33,7 @@ body::-webkit-scrollbar-thumb:hover {
 header {
   width: 100%;
   height: 30vh;
-  background-image: url("images/al-nik-J5XqX-qvEZE-unsplash-min.jpg");
+  background-image: url("images/thomas-t-OPpCbAAKWv8-unsplash-min.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -141,11 +141,12 @@ main .mainContainer {
   width: 90%;
   height: 100%;
   min-height: 100vh;
-  margin-top: -90px;
+  margin-top: -110px;
   z-index: 1;
   border-width: 8px;
   border-style: solid;
-  border-image: linear-gradient(to bottom, #e8fff0, rgba(0, 0, 0, 0)) 1 100%;
+  -o-border-image: linear-gradient(to bottom, #e8fff0, rgba(0, 0, 0, 0)) 1 100%;
+     border-image: linear-gradient(to bottom, #e8fff0, rgba(0, 0, 0, 0)) 1 100%;
 }
 main .mainContainer h1 {
   background-color: #ffffff;
@@ -175,9 +176,6 @@ main .mainContainer .MainContentItem .teacherShort {
 }
 main .mainContainer .MainContentItem .teacherComission {
   width: 20%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 main .mainContainer .MainContentItem .teacherEmail {
   width: 20%;
@@ -311,6 +309,31 @@ main .mainContainer .menuHeadline {
     width: 20%;
   }
 }
+@media (max-height: 700px) {
+  main .mainContainer {
+    margin-top: -80px;
+  }
+}
+@media (max-height: 600px) {
+  main .mainContainer {
+    margin-top: -60px;
+  }
+}
+@media (max-height: 520px) {
+  main .mainContainer {
+    margin-top: -40px;
+  }
+}
+@media (max-height: 450px) {
+  main .mainContainer {
+    margin-top: -10px;
+  }
+}
+@media (max-height: 340px) {
+  main .mainContainer {
+    margin-top: 0px;
+  }
+}
 footer {
   width: 100%;
   background-color: #e8fff0;
@@ -368,7 +391,8 @@ footer .footerContent .Footerprojects .projectCarousel .progressBar {
 footer .footerContent .Footerprojects .projectCarousel .progressBar .progressFiller {
   width: 0%;
   height: 100%;
-  animation: progresAnim 5s linear infinite;
+  -webkit-animation: progresAnim 5s linear infinite;
+          animation: progresAnim 5s linear infinite;
   background-color: #24783c;
   border-radius: 10px;
 }
@@ -387,6 +411,15 @@ footer .footerCopyright p a {
 }
 footer .footerCopyright p a:hover {
   text-decoration: underline;
+}
+
+@-webkit-keyframes progresAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes progresAnim {
@@ -441,6 +474,4 @@ footer .footerCopyright p a:hover {
     flex-direction: column;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=teachersMenu.css.map */
+}/*# sourceMappingURL=teachersMenu.css.map */

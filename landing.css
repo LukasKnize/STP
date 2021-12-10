@@ -88,10 +88,23 @@ header .headerBody .downArrow {
   margin-left: -40px;
   top: 80%;
   filter: drop-shadow(0px -8px 6px #e8fff0);
-  animation: arrowAnim 2s linear infinite;
+  -webkit-animation: arrowAnim 2s linear infinite;
+          animation: arrowAnim 2s linear infinite;
 }
 header .menuForMobileBackground {
   display: none;
+}
+
+@-webkit-keyframes arrowAnim {
+  0% {
+    filter: drop-shadow(0px -8px 6px #e8fff0);
+  }
+  50% {
+    filter: drop-shadow(0px 8px 6px #e8fff0);
+  }
+  100% {
+    filter: drop-shadow(0px -8px 6px #e8fff0);
+  }
 }
 
 @keyframes arrowAnim {
@@ -229,7 +242,8 @@ footer .footerContent .Footerprojects .projectCarousel .progressBar {
 footer .footerContent .Footerprojects .projectCarousel .progressBar .progressFiller {
   width: 0%;
   height: 100%;
-  animation: progresAnim 5s linear infinite;
+  -webkit-animation: progresAnim 5s linear infinite;
+          animation: progresAnim 5s linear infinite;
   background-color: #24783c;
   border-radius: 10px;
 }
@@ -248,6 +262,15 @@ footer .footerCopyright p a {
 }
 footer .footerCopyright p a:hover {
   text-decoration: underline;
+}
+
+@-webkit-keyframes progresAnim {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes progresAnim {
@@ -441,6 +464,4 @@ footer .footerCopyright p a:hover {
     flex-direction: column;
     text-align: center;
   }
-}
-
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

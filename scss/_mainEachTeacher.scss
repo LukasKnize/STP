@@ -179,3 +179,43 @@ main {
     }
   }
 }
+
+@media (max-height: 700px) {
+  main {
+    .mainContainer {
+      margin-top: -80px;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  main {
+    .mainContainer {
+      margin-top: -60px;
+    }
+  }
+}
+
+@media (max-height: 520px) {
+  main {
+    .mainContainer {
+      margin-top: -40px;
+    }
+  }
+}
+
+@media (max-height: 450px) {
+  main {
+    .mainContainer {
+      margin-top: -10px;
+    }
+  }
+}
+
+@media (max-height: 340px) {
+  main {
+    .mainContainer {
+      margin-top: 0px;
+    }
+  }
+}

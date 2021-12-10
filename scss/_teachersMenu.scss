@@ -11,12 +11,11 @@ main {
     width: 90%;
     height: 100%;
     min-height: 100vh;
-    margin-top: -90px;
+    margin-top: -110px;
     z-index: 1;
     border-width: 8px;
     border-style: solid;
-    border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0))
-      1 100%;
+    border-image: linear-gradient(to bottom, $lightGreenColor, rgba(0, 0, 0, 0)) 1 100%;
     h1 {
       background-color: #ffffff;
       width: 90%;
@@ -45,9 +44,9 @@ main {
       }
       .teacherComission {
         width: 20%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
       }
       .teacherEmail {
         width: 20%;
@@ -215,6 +214,46 @@ main {
           width: 20%;
         }
       }
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  main {
+    .mainContainer {
+      margin-top: -80px;
+    }
+  }
+}
+
+@media (max-height: 600px) {
+  main {
+    .mainContainer {
+      margin-top: -60px;
+    }
+  }
+}
+
+@media (max-height: 520px) {
+  main {
+    .mainContainer {
+      margin-top: -40px;
+    }
+  }
+}
+
+@media (max-height: 450px) {
+  main {
+    .mainContainer {
+      margin-top: -10px;
+    }
+  }
+}
+
+@media (max-height: 340px) {
+  main {
+    .mainContainer {
+      margin-top: 0px;
     }
   }
 }
