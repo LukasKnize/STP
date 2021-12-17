@@ -37,30 +37,33 @@ main {
             margin-left: auto;
             margin-right: auto;
             justify-content: space-between;
-            .menuItem {
-                width: 230px;
-                height: 230px;
-                border: 1px $greenColor solid;
-                border-radius: 20px;
-                box-shadow: $lightGreenColor 3px 3px 5px;
-                transition: box-shadow 1s;
-                &:hover{
-                    box-shadow: #d2ffe2 6px 6px 5px;
-                }
-                .iconContainer {
-                    width: 100%;
-                    height: 125px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-end;
-                    img {
-                        height: 50px;
+            a{
+                text-decoration: none;
+                .menuItem {
+                    width: 230px;
+                    height: 230px;
+                    border: 1px $greenColor solid;
+                    border-radius: 20px;
+                    box-shadow: $lightGreenColor 3px 3px 5px;
+                    transition: box-shadow 1s;
+                    &:hover{
+                        box-shadow: #d2ffe2 6px 6px 5px;
                     }
-                }
-                p {
-                    color: $greenColor;
-                    text-align: center;
-                    margin-top: 50px;
+                    .iconContainer {
+                        width: 100%;
+                        height: 125px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        img {
+                            height: 50px;
+                        }
+                    }
+                    p {
+                        color: $greenColor;
+                        text-align: center;
+                        margin-top: 50px;
+                    }
                 }
             }
         }

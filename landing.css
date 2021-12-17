@@ -52,7 +52,7 @@ header .headerBody nav {
   align-items: center;
 }
 header .headerBody nav img {
-  height: 100px;
+  height: 80px;
 }
 header .headerBody nav .headerLinks .headerlink {
   color: #ffffff;
@@ -158,7 +158,10 @@ main .quickMenu .quickMenuContainer {
   margin-right: auto;
   justify-content: space-between;
 }
-main .quickMenu .quickMenuContainer .menuItem {
+main .quickMenu .quickMenuContainer a {
+  text-decoration: none;
+}
+main .quickMenu .quickMenuContainer a .menuItem {
   width: 230px;
   height: 230px;
   border: 1px #24783c solid;
@@ -166,20 +169,20 @@ main .quickMenu .quickMenuContainer .menuItem {
   box-shadow: #e8fff0 3px 3px 5px;
   transition: box-shadow 1s;
 }
-main .quickMenu .quickMenuContainer .menuItem:hover {
+main .quickMenu .quickMenuContainer a .menuItem:hover {
   box-shadow: #d2ffe2 6px 6px 5px;
 }
-main .quickMenu .quickMenuContainer .menuItem .iconContainer {
+main .quickMenu .quickMenuContainer a .menuItem .iconContainer {
   width: 100%;
   height: 125px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-main .quickMenu .quickMenuContainer .menuItem .iconContainer img {
+main .quickMenu .quickMenuContainer a .menuItem .iconContainer img {
   height: 50px;
 }
-main .quickMenu .quickMenuContainer .menuItem p {
+main .quickMenu .quickMenuContainer a .menuItem p {
   color: #24783c;
   text-align: center;
   margin-top: 50px;
@@ -188,6 +191,7 @@ main .quickMenu .quickMenuContainer .menuItem p {
 footer {
   width: 100%;
   background-color: #e8fff0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.356);
 }
 footer .footerContent {
   width: 80%;
@@ -231,6 +235,7 @@ footer .footerContent .Footerprojects .projectCarousel img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 footer .footerContent .Footerprojects .projectCarousel .progressBar {
   margin-top: 15px;
@@ -283,11 +288,18 @@ footer .footerCopyright p a:hover {
 }
 @media (max-width: 1050px) {
   main .quickMenu .quickMenuContainer {
-    width: 100%;
+    width: 90%;
   }
-  main .quickMenu .quickMenuContainer .menuItem {
-    width: 200px;
-    height: 200px;
+  main .quickMenu .quickMenuContainer a .menuItem {
+    width: 180px;
+    height: 180px;
+  }
+  main .quickMenu .quickMenuContainer a .menuItem .iconContainer {
+    width: 100%;
+    height: 100px;
+  }
+  main .quickMenu .quickMenuContainer a .menuItem p {
+    margin-top: 40px;
   }
 }
 @media (max-width: 850px) {
@@ -340,7 +352,7 @@ footer .footerCopyright p a:hover {
     justify-items: center;
     row-gap: 25px;
   }
-  main .quickMenu .quickMenuContainer .menuItem {
+  main .quickMenu .quickMenuContainer a .menuItem {
     width: 230px;
     height: 230px;
   }
