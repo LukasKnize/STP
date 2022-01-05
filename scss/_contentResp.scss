@@ -1,5 +1,5 @@
 @media (max-width: 1050px) {
-    main {
+    .mainLanding {
         .quickMenu {
             .quickMenuContainer {
                 width: 90%;
@@ -22,7 +22,7 @@
 }
 
 @media (max-width: 850px){
-    main {
+    .mainLanding {
         .quickMenu {
             .quickMenuContainer {
                 display: grid;
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 760px){
-    main {
+    .mainLanding {
         #importantInfo {
             background-color: $lightGreenColor;
             width: 100%;
@@ -71,7 +71,7 @@
 }
 
 @media(max-width: 600px){
-    main {
+    .mainLanding {
         .quickMenu {
             .quickMenuContainer {
                 display: grid;
@@ -92,7 +92,7 @@
 }
 
 @media(max-width: 400px){
-    main {
+    .mainLanding {
         #importantInfo {
             .importantInfoHolder {
                 .importantInfoContainer {

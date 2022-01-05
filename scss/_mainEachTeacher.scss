@@ -1,4 +1,4 @@
-main {
+.mainEachTeacher {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@ main {
   }
 }
 @media (max-width: 1200px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       .info {
         margin-left: 120px;
@@ -94,7 +94,7 @@ main {
   }
 }
 @media (max-width: 900px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -106,7 +106,7 @@ main {
   }
 }
 @media (max-width: 800px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -118,7 +118,7 @@ main {
   }
 }
 @media (max-width: 700px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -130,7 +130,7 @@ main {
   }
 }
 @media (max-width: 600px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -147,7 +147,7 @@ main {
   }
 }
 @media (max-width: 500px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -164,7 +164,7 @@ main {
   }
 }
 @media (max-width: 400px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       h1 {
         text-align: center;
@@ -182,7 +182,7 @@ main {
 }
 
 @media (max-height: 700px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       margin-top: -80px;
     }
@@ -190,7 +190,7 @@ main {
 }
 
 @media (max-height: 600px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       margin-top: -60px;
     }
@@ -198,7 +198,7 @@ main {
 }
 
 @media (max-height: 520px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       margin-top: -40px;
     }
@@ -206,7 +206,7 @@ main {
 }
 
 @media (max-height: 450px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       margin-top: -10px;
     }
@@ -214,7 +214,7 @@ main {
 }
 
 @media (max-height: 340px) {
-  main {
+  .mainEachTeacher {
     .mainContainer {
       margin-top: 0px;
     }

@@ -1,4 +1,4 @@
-main {
+.mainAkceMenu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +57,7 @@ main {
 }
 
 @media (max-width: 900px){
-    main {
+    .mainAkceMenu {
         .mainContainer {
             .MainContentItem {
                 .itemName, .headerItemName{
@@ -75,7 +75,7 @@ main {
 }
 
 @media (max-width: 650px) {
-    main {
+    .mainAkceMenu {
         div {
             h1 {
                 text-align: center;
@@ -85,7 +85,7 @@ main {
 }
 
 @media (max-width: 600px){
-    main {
+    .mainAkceMenu {
         .mainContainer {
             .MainContentItem {
                 .itemName, .headerItemName{
@@ -100,7 +100,7 @@ main {
 }
 
 @media (max-width: 500px){
-    main {
+    .mainAkceMenu {
         .mainContainer {
             .MainContentItem {
                 .itemName, .headerItemName{
@@ -115,7 +115,7 @@ main {
 }
 
 @media (max-width: 400px){
-    main {
+    .mainAkceMenu {
         .mainContainer {
             .MainContentItem {
                 .itemName, .headerItemName{
@@ -131,7 +131,7 @@ main {
 }
 
 @media (max-height: 700px) {
-    main {
+    .mainAkceMenu {
       .mainContainer {
         margin-top: -80px;
       }
@@ -139,7 +139,7 @@ main {
   }
   
   @media (max-height: 600px) {
-    main {
+    .mainAkceMenu {
       .mainContainer {
         margin-top: -60px;
       }
@@ -147,7 +147,7 @@ main {
   }
   
   @media (max-height: 520px) {
-    main {
+    .mainAkceMenu {
       .mainContainer {
         margin-top: -40px;
       }
@@ -155,7 +155,7 @@ main {
   }
   
   @media (max-height: 450px) {
-    main {
+    .mainAkceMenu {
       .mainContainer {
         margin-top: -10px;
       }
@@ -163,7 +163,7 @@ main {
   }
   
   @media (max-height: 340px) {
-    main {
+    .mainAkceMenu {
       .mainContainer {
         margin-top: 0px;
       }

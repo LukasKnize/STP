@@ -1,4 +1,4 @@
-header {
+.headerForm {
   width: 100%;
   height: 30vh;
   background-image: url($background);
@@ -45,7 +45,7 @@ header {
 }
 
 @media (max-width: 800px) {
-  header {
+  .headerForm {
     .headerBody {
       nav {
         padding-left: 5px;
@@ -100,7 +100,7 @@ header {
 }
 
 @media(min-height: 1000px){
-  header {
+  .headerForm {
     height: 15vh;
   }
 }

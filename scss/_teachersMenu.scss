@@ -1,4 +1,4 @@
-main {
+.mainTeachersMenu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@ main {
   }
 }
 @media (max-width: 1200px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       .MainContentItem {
         .teacherShort {
@@ -88,7 +88,7 @@ main {
 }
 
 @media (max-width: 900px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       .MainContentItem {
         .teacherShort {
@@ -112,7 +112,7 @@ main {
 }
 
 @media (max-width: 650px) {
-  main {
+  .mainTeachersMenu {
     div {
       h1 {
         text-align: center;
@@ -142,7 +142,7 @@ main {
 }
 
 @media (max-width: 600px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       .MainContentItem {
         font-size: 1rem;
@@ -167,7 +167,7 @@ main {
 }
 
 @media (max-width: 500px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       .MainContentItem {
         font-size: 1rem;
@@ -192,7 +192,7 @@ main {
 }
 
 @media (max-width: 400px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       .MainContentItem {
         font-size: 1rem;
@@ -217,7 +217,7 @@ main {
 }
 
 @media (max-height: 700px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       margin-top: -80px;
     }
@@ -225,7 +225,7 @@ main {
 }
 
 @media (max-height: 600px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       margin-top: -60px;
     }
@@ -233,7 +233,7 @@ main {
 }
 
 @media (max-height: 520px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       margin-top: -40px;
     }
@@ -241,7 +241,7 @@ main {
 }
 
 @media (max-height: 450px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       margin-top: -10px;
     }
@@ -249,7 +249,7 @@ main {
 }
 
 @media (max-height: 340px) {
-  main {
+  .mainTeachersMenu {
     .mainContainer {
       margin-top: 0px;
     }

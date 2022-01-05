@@ -1,4 +1,4 @@
-main {
+.mainAkce {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +66,7 @@ main {
 }
 
 @media (max-width: 1100px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: -80px;
     }
@@ -74,7 +74,7 @@ main {
 }
 
 @media (max-width: 800px){
-  main {
+  .mainAkce {
     .mainContainer {
       display: flex;
       flex-direction: column;
@@ -100,7 +100,7 @@ main {
 }
 
 @media (max-width: 650px) {
-  main {
+  .mainAkce {
     div {
       h1 {
         text-align: center;
@@ -110,7 +110,7 @@ main {
 }
 
 @media (max-height: 700px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: -80px;
     }
@@ -118,7 +118,7 @@ main {
 }
 
 @media (max-height: 600px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: -60px;
     }
@@ -126,7 +126,7 @@ main {
 }
 
 @media (max-height: 520px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: -40px;
     }
@@ -134,7 +134,7 @@ main {
 }
 
 @media (max-height: 450px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: -10px;
     }
@@ -142,7 +142,7 @@ main {
 }
 
 @media (max-height: 340px) {
-  main {
+  .mainAkce {
     .mainContainer {
       margin-top: 0px;
     }
