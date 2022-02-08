@@ -5,7 +5,7 @@ function infoSSPSDynamicTitle(){
     add_theme_support('title-tag');
 }
 
-add_action('after_setup_theme', 'infoSSPSDynamicTitle')
+add_action('after_setup_theme', 'infoSSPSDynamicTitle');
 
 //dinamické přiřazování stylů
 function infoSSPSRegisterStyles(){

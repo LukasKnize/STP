@@ -17,10 +17,13 @@ wp_head();
 </head>
 
 <body>
+    <?php 
+    $landingPageHeader = get_field('landingPageHeader');
+    ?>
     <header class="headerLanding">
         <div class="headerBody">
             <nav>
-                <a href="./landingPage.html"><img src="images/logoWhite.png" alt=""></a>
+                <a href="./landingPage.html"><img src="./assets/images/logoWhite.png" alt=""></a>
                 <div class="headerLinks">
                     <a href="./akceMenu.html" class="headerlink">AKCE</a>
                     <a href="./teachersMenu.html" class="headerlink">UČITELÉ</a>
@@ -30,8 +33,8 @@ wp_head();
                 </div>
             </nav>
 
-            <h1>Vítejte na informačním webu pro studenty SSPŠaG</h1>
-            <p>Zde najdete vše co potřebujete jako student SSPŠaG</p>
+            <h1><?php echo $landingPageHeader['welcomingTextMain']; ?></h1>
+            <p><?php echo $landingPageHeader['welcomingText']; ?></p>
             <a href="#importantInfo"><i class="fas fa-chevron-down downArrow"></i></a>
         </div>
         <div class="menuForMobileBackground" id="menuForMobileBackground">
