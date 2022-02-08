@@ -1,4 +1,6 @@
-
+<?php 
+get_header('landing');
+?>
     <main class="mainLanding">
         <div id="importantInfo">
             <h2>Aktuality</h2>
@@ -82,4 +84,6 @@
             </div>
         </div>
     </main>
-    
+    <?php
+    get_footer();
+    ?>
