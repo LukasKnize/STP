@@ -1,7 +1,7 @@
 /*
 Theme Name: InfoSSPS
 Text Domain: idk
-Version: 0.1a
+Version: 0.1.3a
 Description: Responzivní informační stránka
 Author: Lukáš Kníže, Maxmilián Vlach
 */
@@ -41,7 +41,6 @@ Author: Lukáš Kníže, Maxmilián Vlach
   .headerLanding {
     width: 100%;
     height: 100vh;
-    background-image: url("./assets/images/alvaro-serrano-hjwKMkehBco-unsplash-min.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,6 +128,7 @@ Author: Lukáš Kníže, Maxmilián Vlach
   }
   .mainLanding #importantInfo .importantInfoHolder .importantInfoContainer {
     padding: 0 50px;
+    width: 50%;
   }
   .mainLanding #importantInfo .importantInfoHolder .importantInfoContainer .InfoContainer {
     display: flex;
@@ -325,7 +325,7 @@ Author: Lukáš Kníže, Maxmilián Vlach
       height: 50px;
     }
     .mainLanding #importantInfo .importantInfoHolder #LineBorder {
-      border-right: 1px #4d4d4d solid;
+      border-right:none;
     }
   }
   @media (max-width: 600px) {

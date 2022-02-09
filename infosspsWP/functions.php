@@ -19,7 +19,7 @@ add_action('wp_enqueue_scripts', 'infoSSPSRegisterStyles');
 
 //dinamické přiřazování scriptů
 function infoSSPSRegisterScripts(){
-    wp_enqueue_script('siteScript', get_template_directory_uri() . "assets/js/siteScript.js", array(), '1.0', true);
+    wp_enqueue_script('siteScript', get_template_directory_uri() . "/assets/js/siteScript.js", array(), false, true);
 }
 
 add_action('wp_enqueue_scripts', 'infoSSPSRegisterScripts');

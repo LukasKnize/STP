@@ -19,11 +19,12 @@ wp_head();
 <body>
     <?php 
     $landingPageHeader = get_field('landingPageHeader');
+    $backgroundImage = get_template_directory_uri().'/assets/images/alvaro-serrano-hjwKMkehBco-unsplash.jpg';
     ?>
-    <header class="headerLanding">
+    <header class="headerLanding" style="background-image: url('<?php echo $backgroundImage ?>');">
         <div class="headerBody">
             <nav>
-                <a href="./landingPage.html"><img src="./assets/images/logoWhite.png" alt=""></a>
+                <a href="./landingPage.html"><img src="<?php echo get_template_directory_uri().'/assets/images/logoWhite.png' ?>" alt="info SSPŠ logo"></a>
                 <div class="headerLinks">
                     <a href="./akceMenu.html" class="headerlink">AKCE</a>
                     <a href="./teachersMenu.html" class="headerlink">UČITELÉ</a>
