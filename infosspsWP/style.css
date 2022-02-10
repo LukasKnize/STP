@@ -1,7 +1,7 @@
 /*
 Theme Name: InfoSSPS
 Text Domain: idk
-Version: 0.1.6a
+Version: 0.1.7a
 Description: Responzivní informační stránka
 Author: Lukáš Kníže, Maxmilián Vlach
 */
@@ -1484,3 +1484,7 @@ Author: Lukáš Kníže, Maxmilián Vlach
       margin-top: 0px;
     }
   }
+
+  .single .nav-links {
+    display: none;
+}

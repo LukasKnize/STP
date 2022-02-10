@@ -22,6 +22,10 @@ $quickInfo = get_field('quickInfo');
                     <p class="info"><?php echo $quickInfo['eventName']; ?></p>
                 </div>
                 <div class="sideText">
+                    <p class="category">Krátký popis:</p>
+                    <p class="info"><?php echo $quickInfo['eventDescriptionShort']; ?></p>
+                </div>
+                <div class="sideText">
                     <p class="category">Koordinátor akce:</p>
                     <p class="info"><?php echo $quickInfo['eventCoordinator']; ?></p>
                 </div>
