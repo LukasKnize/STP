@@ -24,4 +24,24 @@ function infoSSPSRegisterScripts(){
 
 add_action('wp_enqueue_scripts', 'infoSSPSRegisterScripts');
 
+function infoSSPSAkceType(){
+
+$args = array(
+    'labels' => array(
+        'name' => 'Akce',
+        'singular_name' => 'Akci',
+    ),
+    'hierarchical' => true,
+    'menu_icon' => 'dashicons-calendar',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => array('title'),
+);
+
+register_post_type('akce', $args);
+
+}
+
+add_action('init', 'infoSSPSAkceType');
+
 ?>

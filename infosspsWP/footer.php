@@ -15,7 +15,7 @@
             <div class="Footerprojects">
                 <h3>Projekty</h3>
                 <div class="projectCarousel">
-                    <img src="images/WR_Vertical_1-2048x515.png" alt="" id="projectImg">
+                    <img src="https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/WR_Vertical_1-2048x515.png" alt="" id="projectImg">
                     <div class="progressBar">
                         <div class="progressFiller"></div>
                     </div>

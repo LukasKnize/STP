@@ -15,10 +15,13 @@
 </head>
 
 <body>
-    <header class="headerForm">
+<?php 
+    $backgroundImage = get_template_directory_uri().'/assets/images/al-nik-J5XqX-qvEZE-unsplash-min.jpg';
+    ?>
+    <header class="headerForm" style="background-image: url('<?php echo $backgroundImage ?>');">
         <div class="headerBody">
             <nav>
-                <a href="./landingPage.html"><img src="images/logoWhite.png" alt="" /></a>
+                <a href="./landingPage.html"><img src="<?php echo get_template_directory_uri().'/assets/images/logoWhite.png' ?>" alt="info SSPŠ logo" /></a>
                 <div class="headerLinks">
                     <a href="./akceMenu.html" class="headerlink">AKCE</a>
                     <a href="./teachersMenu.html" class="headerlink">UČITELÉ</a>
