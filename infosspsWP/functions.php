@@ -56,6 +56,19 @@ $args2 = array(
 
 register_post_type('eachteacher', $args2);
 
+$args3 = array(
+    'labels' => array(
+        'name' => 'system',
+        'singular_name' => 'Systém',
+    ),
+    'hierarchical' => true,
+    'menu_icon' => 'dashicons-networking',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => array('title'),
+);
+
+register_post_type('system', $args3);
 }
 
 add_action('init', 'infoSSPSAkceType');
