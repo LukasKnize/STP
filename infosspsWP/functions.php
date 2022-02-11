@@ -44,7 +44,7 @@ register_post_type('akce', $args);
 
 $args2 = array(
     'labels' => array(
-        'name' => 'eachTeacher',
+        'name' => 'Učitelé',
         'singular_name' => 'Učitel',
     ),
     'hierarchical' => true,
@@ -58,7 +58,7 @@ register_post_type('eachteacher', $args2);
 
 $args3 = array(
     'labels' => array(
-        'name' => 'system',
+        'name' => 'systémy',
         'singular_name' => 'Systém',
     ),
     'hierarchical' => true,
@@ -69,6 +69,21 @@ $args3 = array(
 );
 
 register_post_type('system', $args3);
+
+$args4 = array(
+    'labels' => array(
+        'name' => 'Projekty',
+        'singular_name' => 'projekt',
+    ),
+    'hierarchical' => true,
+    'menu_icon' => 'dashicons-groups',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => array('title'),
+);
+
+register_post_type('project', $args4);
+
 }
 
 add_action('init', 'infoSSPSAkceType');

@@ -38,7 +38,7 @@ get_header();
                 <a class="itemName" href="<?php the_permalink(); ?>">
                     <p><?php the_title(); ?></p>
                 </a>
-                <p class="itemDate"><?php the_date(); ?></p>
+                <p class="itemDate"><?php get_the_date(); ?></p>
                 <p class="itemDescription"><?php echo $quickInfo['eventDescriptionShort']; ?></p>
             </div>
             <?php

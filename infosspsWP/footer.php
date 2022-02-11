@@ -15,7 +15,40 @@
             <div class="Footerprojects">
                 <h3>Projekty</h3>
                 <div class="projectCarousel">
-                    <img src="https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/WR_Vertical_1-2048x515.png" alt="" id="projectImg">
+                <?php
+        // WP_Query arguments
+        $args = array (
+            'post_type'      => array( 'project' ),
+            'post_status'    => array( 'publish' ),
+        );
+
+        // The Query
+        $post_query = new WP_Query( $args );
+
+        if ( $post_query->have_posts() ) : ?>
+            <?php
+            // Start the Loop.
+            while ( $post_query->have_posts() ) :
+                // You can list your posts here
+                $post_query->the_post();
+                $quickInfo = get_field('quickInfo');
+                $logo = $quickInfo['logo'];
+                ?>
+                    <a href="<?php the_permalink(); ?>" target="_blank" class="footerCarousel">
+                        <img src="<?php echo esc_url($logo['url']); ?>" alt="" class="projectImg">
+                    </a>
+                    <?php
+            endwhile;
+
+            // Navigation
+            the_post_navigation();
+        else :
+            // No Post Found
+        endif;
+
+        // Restore original Post Data
+        wp_reset_postdata();
+        ?>
                     <div class="progressBar">
                         <div class="progressFiller"></div>
                     </div>
