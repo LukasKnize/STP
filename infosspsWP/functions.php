@@ -36,12 +36,31 @@ $args = array(
     'public' => true,
     'has_archive' => false,
     'supports' => array('title'),
+
+
 );
 
 register_post_type('akce', $args);
 
+$args2 = array(
+    'labels' => array(
+        'name' => 'eachTeacher',
+        'singular_name' => 'Učitel',
+    ),
+    'hierarchical' => true,
+    'menu_icon' => 'dashicons-businessperson',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => array('title'),
+);
+
+register_post_type('eachteacher', $args2);
+
 }
 
 add_action('init', 'infoSSPSAkceType');
+
+
+
 
 ?>
