@@ -4,11 +4,11 @@
                 <h3>Odkazy</h3>
                 <a href="https://www.ssps.cz/" target="_blank" class="footerlink">Web školy</a>
                 <br>
-                <a href="./teachersMenu.html" class="footerlink">Kontakty</a>
+                <a href="#" class="footerlink">Kontakty</a>
                 <br>
-                <a href="./akceMenu.html" class="footerlink">Aktuality</a>
+                <a href="https://stp-vlach-knize.cajthaml.eu/menu-akce/" class="footerlink">Aktuality</a>
                 <br>
-                <a href="./pageForm.html" class="footerlink">Podmínky používání</a>
+                <a href="#" class="footerlink">Podmínky používání</a>
                 <br>
                 <a href="https://www.presloviny.cz/" class="footerlink">Presloviny</a>
             </div>

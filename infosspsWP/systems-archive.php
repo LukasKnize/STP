@@ -30,12 +30,14 @@ get_header();
                 $platformName = get_field('platformName');
                 $logo = get_field('logo');
                 ?>
-        <div class="systemItem">
-          <div class="iconContainer">
-            <img src="<?php echo esc_url($logo['url']); ?>" alt="">
+        <a href="<?php the_permalink(); ?>">
+          <div class="systemItem">
+            <div class="iconContainer">
+              <img src="<?php echo esc_url($logo['url']); ?>" alt="">
+            </div>
+            <p><?php echo $platformName; ?></p>
           </div>
-          <p><?php echo $platformName; ?></p>
-        </div>
+        </a>
         <?php
             endwhile;
 

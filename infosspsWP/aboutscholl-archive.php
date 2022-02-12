@@ -31,15 +31,16 @@ get_header();
             while ( $post_query->have_posts() ) :
                 // You can list your posts here
                 $post_query->the_post();
-                //remove_filter('the_content','wpautop');
+                $title = get_field('title');
+                $text = get_field('text');
                 ?>
                 
             <div class="MainContentItem">
                 <a class="itemName" href="<?php the_permalink(); ?>">
-                    <p><?php the_title(); ?></p>
+                    <p><?php echo $title; ?></p>
                 </a>
                 <p class="itemDate"><?php echo get_the_date(); ?></p>
-                <p class="itemDescription"><?php echo get_the_content(); ?></p>
+                <p class="itemDescription itemDescriptionPost"><?php echo $text ?></p>
             </div>
             <?php
             endwhile;

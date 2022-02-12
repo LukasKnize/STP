@@ -24,12 +24,12 @@ wp_head();
     <header class="headerLanding" style="background-image: url('<?php echo $backgroundImage ?>');">
         <div class="headerBody">
             <nav>
-                <a href="./landingPage.html"><img src="<?php echo get_template_directory_uri().'/assets/images/logoWhite.png' ?>" alt="info SSPŠ logo"></a>
+                <a href="https://stp-vlach-knize.cajthaml.eu/"><img src="<?php echo get_template_directory_uri().'/assets/images/logoWhite.png' ?>" alt="info SSPŠ logo"></a>
                 <div class="headerLinks">
                     <a href="https://stp-vlach-knize.cajthaml.eu/menu-akce/" class="headerlink">AKCE</a>
-                    <a href="./teachersMenu.html" class="headerlink">UČITELÉ</a>
-                    <a href="./systemy.html" class="headerlink">SYSTÉMY</a>
-                    <a href="./pageForm.html" class="headerlink">O ŠKOLE</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/ucitele/" class="headerlink">UČITELÉ</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/systemy/" class="headerlink">SYSTÉMY</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/o-skole/" class="headerlink">O ŠKOLE</a>
                     <i class="fas fa-bars mobileMenuButton" id="openMenu"></i>
                 </div>
             </nav>
@@ -46,11 +46,11 @@ wp_head();
                 <div class="mobileMenuLinks">
                     <a href="https://stp-vlach-knize.cajthaml.eu/menu-akce/" class="headerlink">AKCE</a>
                     <br>
-                    <a href="./teachersMenu.html" class="headerlink">UČITELÉ</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/ucitele/" class="headerlink">UČITELÉ</a>
                     <br>
-                    <a href="./systemy.html" class="headerlink">SYSTÉMY</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/systemy/" class="headerlink">SYSTÉMY</a>
                     <br>
-                    <a href="./systemy.html" class="headerlink">O ŠKOLE</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/o-skole/" class="headerlink">O ŠKOLE</a>
                 </div>
             </div>
         </div>

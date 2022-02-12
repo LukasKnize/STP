@@ -56,7 +56,7 @@ get_header('landing');
         </div>
         <div class="quickMenu">
             <div class="quickMenuContainer">
-                <a href="./pageForm.html">
+                <a href="https://stp-vlach-knize.cajthaml.eu/o-skole/">
                     <div class="menuItem">
                         <div class="iconContainer">
                             <img src="<?php echo get_template_directory_uri().'/assets/images/account_balance_black_24dp.svg' ?>" alt="">
@@ -64,7 +64,7 @@ get_header('landing');
                         <p>ŠKOLA</p>
                     </div>
                 </a>
-                <a href="./teachersMenu.html">
+                <a href="https://stp-vlach-knize.cajthaml.eu/ucitele/">
                 <div class="menuItem">
                     <div class="iconContainer">
                         <img src="<?php echo get_template_directory_uri().'/assets/images/school_black_24dp.svg' ?>" alt="">
@@ -72,7 +72,7 @@ get_header('landing');
                     <p>UČITELÉ</p>
                 </div>
             </a>
-            <a href="./akceMenu.html">
+            <a href="https://stp-vlach-knize.cajthaml.eu/menu-akce/">
                 <div class="menuItem">
                     <div class="iconContainer">
                         <img src="<?php echo get_template_directory_uri().'/assets/images/event_black_24dp.svg' ?>" alt="">
@@ -80,7 +80,7 @@ get_header('landing');
                     <p>AKCE</p>
                 </div>
             </a>
-            <a href="./systemy.html">
+            <a href="https://stp-vlach-knize.cajthaml.eu/systemy/">
                 <div class="menuItem">
                     <div class="iconContainer">
                         <img src="<?php echo get_template_directory_uri().'/assets/images/cast_for_education_black_24dp.svg' ?>" alt="">
