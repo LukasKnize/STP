@@ -1,6 +1,6 @@
 <?php
 /* 
-Template Name: AkceMenu
+Template Name: o škole
 */
 
 get_header();
@@ -11,14 +11,14 @@ get_header();
                 Menu akcí
             </h1>
             <div class="MainContentItem menuHeadline">
-                <p class="headerItemName">Aktualita</p>
+                <p class="headerItemName">Článek</p>
                 <p class="itemDate">Datum</p>
                 <p class="itemDescription">Popis</p>
             </div>
             <?php
         // WP_Query arguments
         $args = array (
-            'post_type'      => array( 'akce' ),
+            'post_type'      => array( 'post' ),
             'post_status'    => array( 'publish' ),
         );
 
@@ -31,7 +31,7 @@ get_header();
             while ( $post_query->have_posts() ) :
                 // You can list your posts here
                 $post_query->the_post();
-                $quickInfo = get_field('quickInfo');
+                //remove_filter('the_content','wpautop');
                 ?>
                 
             <div class="MainContentItem">
@@ -39,7 +39,7 @@ get_header();
                     <p><?php the_title(); ?></p>
                 </a>
                 <p class="itemDate"><?php echo get_the_date(); ?></p>
-                <p class="itemDescription"><?php echo $quickInfo['eventDescriptionShort']; ?></p>
+                <p class="itemDescription"><?php echo get_the_content(); ?></p>
             </div>
             <?php
             endwhile;

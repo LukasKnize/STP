@@ -51,7 +51,7 @@ $teachingPlan = get_field('teachingPlan');
             </div>
           </div>
           <div class="eachElement">
-            <img src="https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/cast_for_education_black_24dp_green (1).svg" alt="" />
+            <img src="<?php echo get_template_directory_uri().'/assets/images/cast_for_education_black_24dp_green.svg' ?>" alt="" />
             <div>
               <p class="header">Systémy</p>
               <p class="text"><?php echo $teacherInfo['systems'];?></p>
