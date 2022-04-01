@@ -20,6 +20,8 @@ get_header();
         $args = array (
             'post_type'      => array( 'post' ),
             'post_status'    => array( 'publish' ),
+            'posts_per_page' => '-1',
+           
         );
 
         // The Query

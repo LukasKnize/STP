@@ -23,6 +23,7 @@ get_header();
         $args = array (
             'post_type'      => array( 'eachteacher' ),
             'post_status'    => array( 'publish' ),
+            'posts_per_page' => '-1',
         );
 
         // The Query
