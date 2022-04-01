@@ -29,7 +29,7 @@ function infoSSPSAkceType(){
 $args = array(
     'labels' => array(
         'name' => 'Akce',
-        'singular_name' => 'Akci',
+        'singular_name' => 'Akce',
     ),
     'hierarchical' => true,
     'menu_icon' => 'dashicons-calendar',

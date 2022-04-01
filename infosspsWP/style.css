@@ -1,7 +1,7 @@
 /*
 Theme Name: InfoSSPS
 Text Domain: idk
-Version: 0.1.11a
+Version: 0.1.13a
 Description: Responzivní informační stránka
 Author: Lukáš Kníže, Maxmilián Vlach
 */
@@ -533,7 +533,7 @@ body {
   color: black;
 }
 .mainTeachersMenu .mainContainer .MainContentItem .teacherCabinet {
-  width: 5%;
+  width: 15%;
 }
 .mainTeachersMenu .mainContainer .menuHeadline {
   border-bottom: 1px solid rgba(0, 0, 0, 0.6);
@@ -554,7 +554,7 @@ body {
     width: 30%;
   }
   .mainTeachersMenu .mainContainer .MainContentItem .teacherCabinet {
-    width: 5%;
+    width: 15%;
   }
 }
 @media (max-width: 900px) {
@@ -1500,6 +1500,10 @@ body {
 
 .footerCarousel {
   display: none;
+}
+
+.footerCarousel:first-child{
+  display: block;
 }
 
 .itemDescriptionPost p{

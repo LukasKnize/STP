@@ -1,8 +1,8 @@
-let currentImg = 0;
-let logos = ['https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/WR_Vertical_1-2048x515.png', 'https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/Presloviny.cz_-1024x222.png',
- 'https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/logo-301-simple.png'];
-let links = ['https://verticalproduction.cz/', 'https://www.presloviny.cz/', 'https://www.studio301.cz/'];
-let currentLink = 'https://verticalproduction.cz/';
+let currentImg = 1;
+// let logos = ['https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/WR_Vertical_1-2048x515.png', 'https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/Presloviny.cz_-1024x222.png',
+//  'https://stp-vlach-knize.cajthaml.eu/wp-content/themes/infoSSPSTheme/assets/images/logo-301-simple.png'];
+// let links = ['https://verticalproduction.cz/', 'https://www.presloviny.cz/', 'https://www.studio301.cz/'];
+// let currentLink = 'https://verticalproduction.cz/';
 
 // setInterval(() => {
 //     switch (currentImg) {
@@ -48,7 +48,6 @@ document.getElementById("closeMenu").addEventListener("click", function (){
 // });
 
 let projects = document.querySelectorAll(".footerCarousel");
-
 setInterval(() => {
     projects[currentImg].style.display = "block";
     if (currentImg == 0) {
