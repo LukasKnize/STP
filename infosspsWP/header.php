@@ -37,13 +37,13 @@
                     <i class="fas fa-times" id="closeMenu"></i>
                 </div>
                 <div class="mobileMenuLinks">
-                    <a href="https://stp-vlach-knize.cajthaml.eu/menu-akce/" class="headerlink">AKCE</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/akce/" class="headerlink">AKCE</a>
                     <br>
                     <a href="https://stp-vlach-knize.cajthaml.eu/ucitele/" class="headerlink">UČITELÉ</a>
                     <br>
                     <a href="https://stp-vlach-knize.cajthaml.eu/systemy/" class="headerlink">SYSTÉMY</a>
                     <br>
-                    <a href="https://stp-vlach-knize.cajthaml.eu/o-skole/" class="headerlink">O ŠKOLE</a>
+                    <a href="https://stp-vlach-knize.cajthaml.eu/skola/" class="headerlink">O ŠKOLE</a>
                 </div>
             </div>
         </div>
